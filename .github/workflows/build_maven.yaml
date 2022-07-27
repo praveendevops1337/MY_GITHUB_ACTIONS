@@ -16,3 +16,6 @@ jobs:
     run: |
       pwd  
       ls
+  - name: build the artifact
+    run: |
+      mvn clean package -f MY_GITHUB_ACTIONS/simple/pom.xml  
