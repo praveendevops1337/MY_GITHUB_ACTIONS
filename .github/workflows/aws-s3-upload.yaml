@@ -4,15 +4,15 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 's3/**'
+      - 'simple/**'
   pull_request:
     branches: [ main ]
     paths:
-      - 's3/**'
+      - 'simple/**'
 defaults:
   run:
     shell: bash
-    working-directory: s3
+    working-directory: simple
 jobs:
   s3-upload:
     name:   ${{matrix.runner}} - ${{ matrix.environment }}
