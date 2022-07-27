@@ -1,0 +1,11 @@
+name: clarifying doubuts
+
+on : push
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+  - name: checking docker version
+    run: |
+      docker --version
