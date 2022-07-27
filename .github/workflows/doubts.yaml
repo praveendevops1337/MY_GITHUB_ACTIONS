@@ -9,3 +9,12 @@ jobs:
   - name: checking docker version
     run: |
       docker --version
+  - name: checking java version
+    run: |
+      java -version
+  - name: checking mavan version
+    run: |   
+      mvn --version
+  - name: present working directory
+    run: |   
+      pwd
