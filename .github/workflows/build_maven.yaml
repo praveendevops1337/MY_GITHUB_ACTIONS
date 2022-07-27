@@ -11,7 +11,7 @@ jobs:
       mvn --version
   - name: building artifact using maven
     run: |
-      mvn clean package --file simple/pom.xml 
+      mvn clean package --file MY_GITHUB_ACTIONS/blob/main/simple/pom.xml
   - name: checking mvn artifact path
     run: |
        pwd
