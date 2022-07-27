@@ -8,9 +8,9 @@ jobs:
   steps:
   - name: checking maven version
     run: |
-      mvn --version
+      mvn --version  
   - name: cloning git repo
       git clone https://github.com/praveendevops1337/MY_GITHUB_ACTIONS.git
-  - name: checking git patch
+  - name: checking git location
     run: |
       pwd  
