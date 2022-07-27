@@ -18,3 +18,9 @@ jobs:
   - name: present working directory
     run: |   
       pwd
+  - name: checking git --version
+    run: |
+      git --version
+      
+      
+      
