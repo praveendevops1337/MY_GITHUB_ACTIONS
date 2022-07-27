@@ -10,6 +10,7 @@ jobs:
     run: |
       mvn --version  
   - name: cloning git repo
+    run: |
       git clone https://github.com/praveendevops1337/MY_GITHUB_ACTIONS.git
   - name: checking git location
     run: |
