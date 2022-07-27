@@ -9,9 +9,8 @@ jobs:
   - name: checking maven version
     run: |
       mvn --version
-  - name: building artifact using maven
+  - name: cloning git repo
+      git clone https://github.com/praveendevops1337/MY_GITHUB_ACTIONS.git
+  - name: checking git patch
     run: |
-      mvn clean package --file MY_GITHUB_ACTIONS/blob/main/simple/pom.xml
-  - name: checking mvn artifact path
-    run: |
-       pwd
+      pwd  
