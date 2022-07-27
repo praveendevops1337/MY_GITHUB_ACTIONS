@@ -1,0 +1,17 @@
+name: building artifact using maven
+
+on : push
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+  - name: checking maven version
+    run: |
+      mvn --version
+  - name: building artifact using maven
+    run: |
+      mvn clean package -f /simple/pom.xml 
+  - name: checking mvn artifact path
+    run: |
+       pwd
